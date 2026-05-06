@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Marvi ❤️</title>
+  <meta name="description" content="A special romantic birthday website made with love for Marvi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-trail" class="cursor-trail"></div>
+
+  <!-- Floating Hearts Background -->
+  <div id="floating-hearts" class="floating-hearts-container"></div>
+
+  <!-- Music Toggle -->
+  <button id="music-toggle" class="music-btn" title="Toggle Music">
+    <span id="music-icon">🎵</span>
+    <span id="music-label">Music</span>
+  </button>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 1: INTRO SCREEN -->
+  <!-- ============================================================ -->
+  <section id="intro" class="intro-section">
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+      <div class="rose-emoji-top">🌹</div>
+      <h1 class="intro-title" id="intro-title"></h1>
+      <div class="heart-divider">💖 ── ── ── 💖 ── ── ── 💖</div>
+      <p class="intro-subtitle" id="intro-subtitle"></p>
+      <div class="intro-hearts">❤️ 🌸 💕 🌸 ❤️</div>
+      <button class="scroll-down-btn" onclick="smoothScrollTo('story')">
+        <span>Our Story</span>
+        <div class="arrow-down">↓</div>
+      </button>
+    </div>
+    <div class="sparkles" id="sparkles"></div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 2: OUR STORY TIMELINE -->
+  <!-- ============================================================ -->
+  <section id="story" class="story-section">
+    <div class="section-header">
+      <h2 class="section-title">Our Story 💕</h2>
+      <p class="section-subtitle">Every moment with you is a treasure</p>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Event 1 -->
+      <div class="timeline-item left fade-in-item">
+        <div class="timeline-card glass-card">
+          <div class="timeline-date">🌸 May 2024</div>
+          <div class="timeline-album">
+            <div class="album-grid-3">
+              <img src="images/pic1.jpeg" alt="Memory 1" class="album-img" onclick="openLightbox(this.src)" />
+              <img src="images/WhatsApp Image 2026-05-06 at 11.26.26 AM.jpeg" alt="Memory 2" class="album-img" onclick="openLightbox(this.src)" />
+              <img src="images/WhatsApp 2026-05-06 at AM.jpeg" alt="Memory 3" class="album-img" onclick="openLightbox(this.src)" />
+            </div>
+          </div>
+          <h3 class="timeline-event">We met as friends</h3>
+          <p class="timeline-desc">The beginning of something magical… Two souls crossing paths, not knowing life would never be the same 🌷</p>
+        </div>
+        <div class="timeline-dot">🌸</div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="timeline-item right fade-in-item">
+        <div class="timeline-dot">❤️</div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-date">❤️ 20 December 2025</div>
+          <div class="timeline-album">
+            <div class="album-grid-3">
+              <img src="images/WhatsApp Image 2026-05-06 at 11.26.26 AM.jpeg" alt="Together 1" class="album-img" onclick="openLightbox(this.src)" />
+              <img src="images/WhatsApp 2026-05-06 at 11.27.51 AM.jpeg" alt="Together 2" class="album-img" onclick="openLightbox(this.src)" />
+              <img src="images/WhatsApp Image -05-06 at 11.26.26 AM.jpeg" alt="Together 3" class="album-img" onclick="openLightbox(this.src)" />
+            </div>
+          </div>
+          <h3 class="timeline-event">The Day You Became Mine ❤️</h3>
+          <p class="timeline-desc">The day my world changed forever. You said yes and my heart has been yours ever since 💞</p>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="timeline-item left fade-in-item">
+        <div class="timeline-card glass-card">
+          <div class="timeline-date">💞 12 February 2026</div>
+          <div class="timeline-album">
+            <div class="album-grid-3">
+              <img src="images/WhatsApp Image 2026-05-06 at 11.26.26 AM.jpeg" alt="Stadium 1" class="album-img" onclick="openLightbox(this.src)" />
+              <img src="images/WhatsApp Image 2026-5-06 at 11.26.26 AM.jpeg" alt="Stadium 2" class="album-img" onclick="openLightbox(this.src)" />
+              <img src="images/WhatsApp Image 2026--06 at 11.27.51 AM.jpeg" alt="Stadium 3" class="album-img" onclick="openLightbox(this.src)" />
+            </div>
+          </div>
+          <h3 class="timeline-event">The Most Beautiful Day of My Life 💞</h3>
+          <p class="timeline-desc">When we met at Karachi Stadium — every second felt like a dream. I want to live that day a thousand times 🏟️❤️</p>
+        </div>
+        <div class="timeline-dot">💞</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 3: SPECIAL MEMORY -->
+  <!-- ============================================================ -->
+  <section id="special-memory" class="special-memory-section">
+    <div class="section-header">
+      <h2 class="section-title">A Day To Remember 💖</h2>
+    </div>
+    <div class="memory-card glass-card glow-card">
+      <div class="memory-date-badge">12 Feb 2026 💖</div>
+      <div class="memory-image-wrap">
+        <img src="images/WhatsApp Image 2026-0506 at 11.27.52 AM.jpeg" alt="Special Memory" class="memory-main-img" />
+        <div class="memory-img-overlay">
+          <span>Our Day ❤️</span>
+        </div>
+      </div>
+      <div class="memory-text">
+        <h3>That day with you was the most beautiful time of my life</h3>
+        <p>Karachi Stadium lit up, but nothing was brighter than your smile. I want to carry this memory in my heart forever, and I want to make a thousand more just like it with you, my love 💕</p>
+      </div>
+      <div class="memory-hearts-row">💗 💗 💗 💗 💗</div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 4: PHOTO GALLERY -->
+  <!-- ============================================================ -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-header">
+      <h2 class="section-title">Our Beautiful Memories 📸</h2>
+      <p class="section-subtitle">Each picture holds a piece of my heart</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox('images/pic1.jpeg')">
+        <img src="images/pic1.jpeg" alt="Gallery 1" />
+        <div class="gallery-overlay"><span>💕</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image 2026-05-06 at 11.26.26 AM.jpeg')">
+        <img src="images/WhatsApp Image 2026-05-06 at 11.26.26 AM.jpeg" alt="Gallery 2" />
+        <div class="gallery-overlay"><span>❤️</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp 2026-05-06 at 11.27.51 AM.jpeg')">
+        <img src="images/WhatsApp 2026-05-06 at 11.27.51 AM.jpeg" alt="Gallery 3" />
+        <div class="gallery-overlay"><span>🌸</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp 2026-05-06 at 11.27.52 AM.jpeg')">
+        <img src="images/WhatsApp 2026-05-06 at 11.27.52 AM.jpeg" alt="Gallery 4" />
+        <div class="gallery-overlay"><span>💖</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image -05-06 at 11.26.26 AM.jpeg')">
+        <img src="images/WhatsApp Image -05-06 at 11.26.26 AM.jpeg" alt="Gallery 5" />
+        <div class="gallery-overlay"><span>🌹</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image -05-06 at 11.27.51 AM.jpeg')">
+        <img src="images/WhatsApp Image -05-06 at 11.27.51 AM.jpeg" alt="Gallery 6" />
+        <div class="gallery-overlay"><span>💝</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image 2026--06 at 11.27.51 AM.jpeg')">
+        <img src="images/WhatsApp Image 2026--06 at 11.27.51 AM.jpeg" alt="Gallery 7" />
+        <div class="gallery-overlay"><span>💞</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image 2026-05-06 a7.52 AM.jpeg')">
+        <img src="images/WhatsApp Image 2026-05-06 a7.52 AM.jpeg" alt="Gallery 8" />
+        <div class="gallery-overlay"><span>🌷</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image 2026-05-at 11.27.52 AM.jpeg')">
+        <img src="images/WhatsApp Image 2026-05-at 11.27.52 AM.jpeg" alt="Gallery 9" />
+        <div class="gallery-overlay"><span>💕</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image 2026-0506 at 11.27.52 AM.jpeg')">
+        <img src="images/WhatsApp Image 2026-0506 at 11.27.52 AM.jpeg" alt="Gallery 10" />
+        <div class="gallery-overlay"><span>❤️</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp Image 2026-5-06 at 11.26.26 AM.jpeg')">
+        <img src="images/WhatsApp Image 2026-5-06 at 11.26.26 AM.jpeg" alt="Gallery 11" />
+        <div class="gallery-overlay"><span>🌸</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/WhatsApp I26-05-06 at 11.26.26 AM.jpeg')">
+        <img src="images/WhatsApp I26-05-06 at 11.26.26 AM.jpeg" alt="Gallery 12" />
+        <div class="gallery-overlay"><span>💖</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/tsApp Image 2026-05-06 at 11.27.52 AM.jpeg')">
+        <img src="images/tsApp Image 2026-05-06 at 11.27.52 AM.jpeg" alt="Gallery 13" />
+        <div class="gallery-overlay"><span>💗</span></div>
+      </div>
+      <!-- Video Tile -->
+      <div class="gallery-item video-tile" onclick="openVideoLightbox('images/WhatsApp Video 2026-05-at 11.27.52 AM.mp4')">
+        <video src="images/WhatsApp Video 2026-05-at 11.27.52 AM.mp4" muted loop autoplay playsinline class="gallery-video"></video>
+        <div class="gallery-overlay video-play-overlay"><span>▶ Our Video</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 5: EMOTIONAL MESSAGE -->
+  <!-- ============================================================ -->
+  <section id="message" class="message-section">
+    <div class="section-header">
+      <h2 class="section-title">From My Heart 💌</h2>
+    </div>
+    <div class="message-card glass-card glow-card">
+      <div class="message-envelope">💌</div>
+      <div class="message-text" id="message-text"></div>
+      <div class="message-signature">— Shayan 💖</div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 6: SURPRISE BUTTON -->
+  <!-- ============================================================ -->
+  <section id="surprise" class="surprise-section">
+    <div class="surprise-content">
+      <h2 class="surprise-heading">One More Thing... 🤫</h2>
+      <button id="surprise-btn" class="surprise-btn" onclick="triggerSurprise()">
+        <span class="surprise-btn-text">Click for Surprise 💝</span>
+        <div class="btn-pulse"></div>
+      </button>
+      <div id="surprise-message" class="surprise-message hidden">
+        <div class="surprise-heart-big">❤️</div>
+        <h3 class="surprise-love-text">I Love You So Much Baby ❤️</h3>
+        <p>Tum meri zindagi ki sabse khoobsurat cheez ho. Aaj tumhara din hai, aur main chahta hoon ke tum hamesha muskurati raho 🌸</p>
+      </div>
+    </div>
+    <div id="hearts-explosion" class="hearts-explosion"></div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 7: FINAL SCREEN -->
+  <!-- ============================================================ -->
+  <section id="finale" class="finale-section">
+    <canvas id="confetti-canvas"></canvas>
+    <div class="finale-content">
+      <div class="finale-cake">🎂</div>
+      <h2 class="finale-title glow-text" id="finale-title">Happy Birthday My Miss Rontu 🎂❤️</h2>
+      <p class="finale-sub">Allah tumhe hamesha khush rakhe ❤️</p>
+      <p class="finale-sub2">Aaj ka din bohot khaas hai, kyunke tum is duniya mein aai 🌸</p>
+      <div class="finale-hearts">💖 💗 💕 💞 💓 💗 💖</div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- LIGHTBOX -->
+  <!-- ============================================================ -->
+  <div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="Full view" />
+      <video id="lightbox-video" src="" controls class="hidden"></video>
+    </div>
+    <button class="lightbox-prev" id="lb-prev" onclick="event.stopPropagation(); lightboxNav(-1)">‹</button>
+    <button class="lightbox-next" id="lb-next" onclick="event.stopPropagation(); lightboxNav(1)">›</button>
+  </div>
+
+  <!-- Hidden Audio -->
+  <audio id="bg-music" loop>
+    <!-- Add your own music file: music/romantic.mp3 -->
+    <source src="music/romantic.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
